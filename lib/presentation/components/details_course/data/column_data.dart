@@ -2,6 +2,8 @@ import 'package:course_app/presentation/components/Custom_Textfiled/textfiled.da
 import 'package:course_app/presentation/components/details_course/data/row_data.dart';
 import 'package:flutter/material.dart';
 
+import '../../../controller/controller.dart';
+
 class ColumnData extends StatelessWidget {
   const ColumnData({Key? key}) : super(key: key);
 
@@ -12,25 +14,25 @@ class ColumnData extends StatelessWidget {
         CustomTextField(
           horizontalPadding: 0,
           labelText: "Instructor",
-          controller: TextEditingController(),
+          controller: instructor,
           styleBorder: const UnderlineInputBorder(),
         ),
         CustomTextField(
           horizontalPadding: 0,
           labelText: "about",
-          controller: TextEditingController(),
+          controller: about,
           styleBorder: const UnderlineInputBorder(),
         ),
         CustomTextField(
           horizontalPadding: 0,
           labelText: "Course",
-          controller: TextEditingController(),
+          controller: course,
           styleBorder: const UnderlineInputBorder(),
         ),
         CustomTextField(
           horizontalPadding: 0,
           labelText: "Specialization",
-          controller: TextEditingController(),
+          controller: specialization,
           styleBorder: const UnderlineInputBorder(),
         ),
 
@@ -38,34 +40,36 @@ class ColumnData extends StatelessWidget {
           icon: Icons.location_on_rounded,
           horizontalPadding: 0,
           labelText: "location",
-          controller: TextEditingController(),
+          controller: location,
           styleBorder: const UnderlineInputBorder(),
         ),
         CustomTextField(
           icon: Icons.date_range,
           horizontalPadding: 0,
           labelText: "StartDate",
-          controller: TextEditingController(),
+          controller: startDate,
           styleBorder: const UnderlineInputBorder(),
         ),
         CustomTextField(
           icon: Icons.date_range,
           horizontalPadding: 0,
           labelText: "EndDate",
-          controller: TextEditingController(),
+          controller: endDate,
           styleBorder: const UnderlineInputBorder(),
         ),
-        const Period(),                    ///     <=     Date
+        const Period(),
+
+        ///     <=     Date
         CustomTextField(
           horizontalPadding: 0,
           labelText: "Phone",
-          controller: TextEditingController(),
+          controller: phone,
           styleBorder: const UnderlineInputBorder(),
         ),
         CustomTextField(
           horizontalPadding: 0,
           labelText: "The importance of the course",
-          controller: TextEditingController(),
+          controller: theImportance,
           styleBorder: const OutlineInputBorder(),
         ),
       ],

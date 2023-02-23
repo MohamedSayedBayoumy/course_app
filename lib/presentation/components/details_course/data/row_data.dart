@@ -1,3 +1,4 @@
+import 'package:course_app/presentation/controller/controller.dart';
 import 'package:flutter/material.dart';
 
 import '../../Custom_Textfiled/textfiled.dart';
@@ -14,14 +15,14 @@ class RowData extends StatelessWidget {
         CustomTextField(
           width: media.width * .40,
           horizontalPadding: 0,
-          controller: TextEditingController(),
+          controller: price,
           labelText: "Price",
           styleBorder: const OutlineInputBorder(),
         ),
         CustomTextField(
           width: media.width * .40,
           horizontalPadding: 0,
-          controller: TextEditingController(),
+          controller: totalHours,
           labelText: "TotalHour",
           styleBorder: const OutlineInputBorder(),
         ),

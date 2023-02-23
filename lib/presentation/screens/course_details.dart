@@ -15,6 +15,7 @@ class CourseDetails extends StatelessWidget {
         backgroundColor: Colors.indigo,
       ),
       body: ListView(
+        shrinkWrap: true,
         children: const [ContainerImage(), DetailsCourse()],
       ),
     );

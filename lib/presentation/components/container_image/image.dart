@@ -14,14 +14,7 @@ class ContainerImage extends StatelessWidget {
           color: Colors.indigo.shade100,
           image: const DecorationImage(
               image: AssetImage("assets/image.jpg"), fit: BoxFit.cover)),
-      child: Container(
-        width: media.width * .4,
-        decoration: const BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.black87,
-            image: DecorationImage(
-                image: AssetImage("assets/image.jpg"), fit: BoxFit.fill)),
-      ),
+
     );
   }
 }
