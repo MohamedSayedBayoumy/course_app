@@ -15,9 +15,6 @@ class DetailsCourse extends StatelessWidget {
         child: Column(
           children: const [
             RowData(),
-
-
-
             ColumnData(),
           ],
         ));

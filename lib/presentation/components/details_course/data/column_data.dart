@@ -35,6 +35,12 @@ class ColumnData extends StatelessWidget {
         ),
         CustomTextField(
           horizontalPadding: 0,
+          labelText: "location",
+          controller: TextEditingController(),
+          styleBorder: const UnderlineInputBorder(),
+        ),
+        CustomTextField(
+          horizontalPadding: 0,
           labelText: "StartDate",
           controller: TextEditingController(),
           styleBorder: const UnderlineInputBorder(),
@@ -42,12 +48,6 @@ class ColumnData extends StatelessWidget {
         CustomTextField(
           horizontalPadding: 0,
           labelText: "EndDate",
-          controller: TextEditingController(),
-          styleBorder: const UnderlineInputBorder(),
-        ),
-        CustomTextField(
-          horizontalPadding: 0,
-          labelText: "location",
           controller: TextEditingController(),
           styleBorder: const UnderlineInputBorder(),
         ),
