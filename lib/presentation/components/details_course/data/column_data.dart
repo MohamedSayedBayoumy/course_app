@@ -34,18 +34,21 @@ class ColumnData extends StatelessWidget {
           styleBorder: const UnderlineInputBorder(),
         ),
         CustomTextField(
+          icon: Icons.location_on_rounded,
           horizontalPadding: 0,
           labelText: "location",
           controller: TextEditingController(),
           styleBorder: const UnderlineInputBorder(),
         ),
         CustomTextField(
+          icon: Icons.date_range,
           horizontalPadding: 0,
           labelText: "StartDate",
           controller: TextEditingController(),
           styleBorder: const UnderlineInputBorder(),
         ),
         CustomTextField(
+          icon: Icons.date_range,
           horizontalPadding: 0,
           labelText: "EndDate",
           controller: TextEditingController(),

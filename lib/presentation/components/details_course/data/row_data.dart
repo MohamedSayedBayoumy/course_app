@@ -43,6 +43,7 @@ class Period  extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           CustomTextField(
+            icon: Icons.watch_later_outlined,
             width: media.width * .40,
             horizontalPadding: 0,
             controller: TextEditingController(),
@@ -50,6 +51,7 @@ class Period  extends StatelessWidget {
             styleBorder: const OutlineInputBorder(),
           ),
           CustomTextField(
+            icon: Icons.watch_later_sharp,
             width: media.width * .40,
             horizontalPadding: 0,
             controller: TextEditingController(),
