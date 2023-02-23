@@ -9,20 +9,21 @@ class RowData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final media = MediaQuery.of(context).size;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         CustomTextField(
           width: media.width * .40,
           horizontalPadding: 0,
-          controller: price,
+          controller: Controllers.price,
           labelText: "Price",
           styleBorder: const OutlineInputBorder(),
         ),
         CustomTextField(
           width: media.width * .40,
           horizontalPadding: 0,
-          controller: totalHours,
+          controller: Controllers.totalHours,
           labelText: "TotalHour",
           styleBorder: const OutlineInputBorder(),
         ),
@@ -44,7 +45,7 @@ class Period extends StatelessWidget {
           icon: Icons.watch_later_outlined,
           width: media.width * .40,
           horizontalPadding: 0,
-          controller: TextEditingController(),
+          controller: Controllers.startDate,
           labelText: "Start From",
           styleBorder: const OutlineInputBorder(),
         ),
@@ -52,7 +53,7 @@ class Period extends StatelessWidget {
           icon: Icons.watch_later_sharp,
           width: media.width * .40,
           horizontalPadding: 0,
-          controller: TextEditingController(),
+          controller: Controllers.to ,
           labelText: "To",
           styleBorder: const OutlineInputBorder(),
         ),

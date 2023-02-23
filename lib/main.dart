@@ -1,4 +1,3 @@
-import 'package:course_app/presentation/screens/course_details.dart';
 import 'package:course_app/presentation/screens/fetch_data.dart';
 import 'package:flutter/material.dart';
 
