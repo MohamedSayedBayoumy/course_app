@@ -9,7 +9,7 @@ class FetchCourseDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Controllers.convert() ;     /// = >  fetch data or demoData
+    Controllers.convert() ;                   /// = >  fetch data or demoData
     return Scaffold(
         backgroundColor: Colors.grey.shade100,
         body: CustomScrollView(

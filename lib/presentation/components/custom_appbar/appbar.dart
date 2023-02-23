@@ -11,14 +11,37 @@ class CustomAppBar extends StatelessWidget {
     return SliverAppBar(
       shadowColor: Colors.black87,
       automaticallyImplyLeading: true,
-      backgroundColor: Colors.white,
-      titleTextStyle: const TextStyle(color: Colors.red),
-      title: const Text("Trinavo Courses" , style: TextStyle(color: Colors.black87 ,fontSize: 25),),
-      expandedHeight: media.height*.3,
-      elevation: 15,
+      backgroundColor: Colors.indigo,
+      expandedHeight: media.height * .5,
+      elevation: 50,
       pinned: true,
-      flexibleSpace: const FlexibleSpaceBar(
-        background: ContainerImage(),
+      flexibleSpace: FlexibleSpaceBar(
+        centerTitle: true,
+        titlePadding: EdgeInsetsDirectional.only(top: 1),
+        title: Container(
+            decoration: BoxDecoration(
+              color: Colors.indigo,
+              borderRadius: BorderRadius.circular(5),
+              // gradient: LinearGradient(
+              //   begin: Alignment.topLeft,
+              //   end: Alignment.bottomRight,
+              //   colors: [
+              //     Colors.grey.shade200,
+              //     Colors.grey.shade300,
+              //     Colors.grey.shade400,
+              //     Colors.grey.shade500,
+              //   ],
+              // ),
+            ),
+            margin: const EdgeInsets.only(top: 30),
+            width: media.width * .5,
+            alignment: Alignment.center,
+            height: media.height * .05,
+            child: const Text(
+              "Trinavo Courses",
+              style: TextStyle(color: Colors.white, fontSize: 30),
+            )),
+        background: const ContainerImage(),
       ),
     );
   }
